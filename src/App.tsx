@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { TopBar } from './components/TopBar';
 import { Header } from './components/Header';
-import { PillarsOverview } from './components/PillarsOverview';
 import { CourseExplorer } from './components/CourseExplorer';
 import { PersonalTraining } from './components/PersonalTraining';
 import { Workshops } from './components/Workshops';
@@ -38,12 +37,6 @@ export const App: React.FC = () => {
       />
 
       <main className="flex-1">
-        {/* 4. Die 4 Säulen auf einen Blick (Orientierungs-Leiste) */}
-        <PillarsOverview onSelectPillar={(pillarId) => {
-          const el = document.getElementById(pillarId);
-          if (el) el.scrollIntoView({ behavior: 'smooth' });
-        }} />
-
         {/* 6. Säule 1: Reguläre Pilates-Kurse für Jeden (Hatten, Oldenburg, Online) */}
         <CourseExplorer
           onOpenBooking={handleDirectBooking}
