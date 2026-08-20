@@ -135,7 +135,7 @@ export const Workshops: React.FC<WorkshopsProps> = ({ onOpenBooking }) => {
         <div className="text-center max-w-3xl mx-auto mb-10">
           <div className="inline-flex items-center gap-2 bg-pilates-gold/15 text-pilates-goldDark px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
             <Award className="w-3.5 h-3.5" />
-            <span>Säule 3: Wissen & Spezial-Themen</span>
+            <span>Workshops & Fach-Fortbildungen</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-pilates-dark mb-4">
             Workshops & Fortbildungen

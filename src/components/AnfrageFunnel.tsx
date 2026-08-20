@@ -76,29 +76,29 @@ export const AnfrageFunnel: React.FC<AnfrageFunnelProps> = ({
   // Complete List of All Offerings
   const allFormats = [
     // 1. Kurse
-    { id: 'stall', title: 'Präventionskurs .im STALL (Hatten)', pillar: '1. Kurse vor Ort', badge: '§ 20 SGB V Kasse', desc: 'Freitags in Hatten/Sandkrug, Kleingruppe (max. 8 TN)' },
-    { id: 'pausenraum', title: 'Präventionskurs .im PAUSENRAUM (Oldenburg)', pillar: '1. Kurse vor Ort', badge: '§ 20 SGB V Kasse', desc: 'Sonntags & Montags in Etzhorn, 75qm moderner Raum' },
-    { id: 'yinlates', title: 'Yin-lates & Faszienentspannung (Oldenburg)', pillar: '1. Kurse vor Ort', badge: 'Deep Stretch', desc: 'Montags 20:15 Uhr, Tiefenentspannung & Atmung' },
-    { id: 'online', title: 'Pre-Brunch Pilates Online', pillar: '1. Kurse Online', badge: '§ 20 SGB V Kasse', desc: 'Sonntagmorgens 08:00 Uhr via Zoom & Mediathek' },
-    // 2. 1:1 Personal
-    { id: 'personal', title: '1:1 Studio-Geräte Training (Reformer & Cadillac)', pillar: '2. 1:1 Personal', badge: 'Kennenlerngespräch', desc: 'Individuelle Schmerztherapie, Neuroathletik & Sport' },
-    { id: 'mobile', title: 'Mobiles Pilates vor Ort (Hausbesuch / Büro)', pillar: '2. 1:1 Personal', badge: 'Hausbesuch', desc: '„Rollt die Matte aus: Ich komme!“ inkl. Equipment' },
-    // 3. Workshops
-    { id: 'longevity-ws', title: 'Workshop: Longevity PILATES (27. Sep 2026)', pillar: '3. Workshops', badge: 'Für Teilnehmer', desc: 'Gesund altern ab 40/50/60 – Schlüsselübungen' },
-    { id: 'decomp-ws', title: 'Workshop: DECOMPRESSION Pilates (11. Okt 2026)', pillar: '3. Workshops', badge: 'Für Teilnehmer', desc: 'Bandscheiben- & Gelenkentlastung' },
-    { id: 'breath-ws', title: 'Workshop: Atem-Special Bremen (14. Nov 2026)', pillar: '3. Workshops', badge: 'Für Teilnehmer', desc: '„Japst du noch oder atmest du schon?“' },
-    { id: 'boundaries-ws', title: 'Coworkshop: „Grenzen“ mit Dr. Jimenez (18. Okt 2026)', pillar: '3. Workshops', badge: 'Körper & Psyche', desc: 'Präsenz & Raum wahrnehmen lernen' },
-    { id: 'balanceboard-ws', title: 'Workshop: Pilates auf dem BalanceBoard', pillar: '3. Workshops', badge: 'Tiefenstabilität', desc: 'Sturzprophylaxe & Sprunggelenke' },
-    { id: 'handson-ws', title: 'Fortbildung: HANDS ON / OFF (28. Nov 2026)', pillar: '3. Fortbildung', badge: '5 DPV Punkte', desc: 'Taktiles Anleiten für Pilates-Lehrende' },
-    { id: 'rollup-ws', title: 'Masterclass: The Roll Up (18. Okt 2026)', pillar: '3. Fortbildung', badge: 'Didaktik & Cues', desc: 'Biomechanik & anatomisch korrektes Unterrichten' },
-    { id: 'mentee', title: '1:1 Mentee-Begleitung für Trainer:innen', pillar: '3. Fortbildung', badge: 'Mentoring', desc: 'Begleitung während/nach der Trainerausbildung' },
-    { id: 'kleingeraete-ws', title: 'Workshop: Sinnvoller Einsatz von Kleingeräten', pillar: '3. Fortbildung', badge: 'Praxis-Event', desc: 'Bänder, Bälle & Rollen gezielt einsetzen' },
-    // 4. Retreats & Reisen
-    { id: 'baltrum-meer', title: '5 Tage PILATES & MEER SEIN (Baltrum, 29.09.–03.10.2026)', pillar: '4. Retreats', badge: 'Warteliste', desc: 'Meeresrauschen, autofreie Inselruhe & Strandtraining' },
-    { id: 'fasten', title: '5 Tage PILATES & FASTEN (12.–18.10.2026)', pillar: '4. Retreats', badge: 'Warteliste', desc: 'Ganzheitliche Entschlackung & sanfte Faszienpflege' },
-    { id: 'pitztal', title: '5 Tage PILATES & BERGWANDERN (Pitztal, 15.–19.06.2027)', pillar: '4. Retreats', badge: 'Max. 8 Plätze', desc: 'Alpen-Panorama, Bergluft & gelenkschonendes Training' },
-    { id: 'baltrum-runner', title: '3 Tage PILATES for RUNNER (Baltrum, 01.–04.05.2027)', pillar: '4. Retreats', badge: 'Läufer Retreat', desc: 'Laufökonomie, Fußstatik & Strandregeneration' },
-    { id: 'hunte-bike', title: '3 Tage PILATES & BIKE HUNTE TOUR (16.–18.04.2027)', pillar: '4. Retreats', badge: 'Aktiv im Grünen', desc: 'Flussradeln entlang der Hunte & Outdoor-Pilates' },
+    { id: 'stall', title: 'Präventionskurs .im STALL (Hatten)', pillar: 'Kurse vor Ort', badge: '§ 20 SGB V Kasse', desc: 'Freitags in Hatten/Sandkrug, Kleingruppe (max. 8 TN)' },
+    { id: 'pausenraum', title: 'Präventionskurs .im PAUSENRAUM (Oldenburg)', pillar: 'Kurse vor Ort', badge: '§ 20 SGB V Kasse', desc: 'Sonntags & Montags in Etzhorn, 75qm moderner Raum' },
+    { id: 'yinlates', title: 'Yin-lates & Faszienentspannung (Oldenburg)', pillar: 'Kurse vor Ort', badge: 'Deep Stretch', desc: 'Montags 20:15 Uhr, Tiefenentspannung & Atmung' },
+    { id: 'online', title: 'Pre-Brunch Pilates Online', pillar: 'Kurse Online', badge: '§ 20 SGB V Kasse', desc: 'Sonntagmorgens 08:00 Uhr via Zoom & Mediathek' },
+    // 1:1 Personal
+    { id: 'personal', title: '1:1 Studio-Geräte Training (Reformer & Cadillac)', pillar: '1:1 Personal', badge: 'Kennenlerngespräch', desc: 'Individuelle Schmerztherapie, Neuroathletik & Sport' },
+    { id: 'mobile', title: 'Mobiles Pilates vor Ort (Hausbesuch / Büro)', pillar: '1:1 Personal', badge: 'Hausbesuch', desc: '„Rollt die Matte aus: Ich komme!“ inkl. Equipment' },
+    // Workshops
+    { id: 'longevity-ws', title: 'Workshop: Longevity PILATES (27. Sep 2026)', pillar: 'Workshops', badge: 'Für Teilnehmer', desc: 'Gesund altern ab 40/50/60 – Schlüsselübungen' },
+    { id: 'decomp-ws', title: 'Workshop: DECOMPRESSION Pilates (11. Okt 2026)', pillar: 'Workshops', badge: 'Für Teilnehmer', desc: 'Bandscheiben- & Gelenkentlastung' },
+    { id: 'breath-ws', title: 'Workshop: Atem-Special Bremen (14. Nov 2026)', pillar: 'Workshops', badge: 'Für Teilnehmer', desc: '„Japst du noch oder atmest du schon?“' },
+    { id: 'boundaries-ws', title: 'Coworkshop: „Grenzen“ mit Dr. Jimenez (18. Okt 2026)', pillar: 'Workshops', badge: 'Körper & Psyche', desc: 'Präsenz & Raum wahrnehmen lernen' },
+    { id: 'balanceboard-ws', title: 'Workshop: Pilates auf dem BalanceBoard', pillar: 'Workshops', badge: 'Tiefenstabilität', desc: 'Sturzprophylaxe & Sprunggelenke' },
+    { id: 'handson-ws', title: 'Fortbildung: HANDS ON / OFF (28. Nov 2026)', pillar: 'Fortbildung', badge: '5 DPV Punkte', desc: 'Taktiles Anleiten für Pilates-Lehrende' },
+    { id: 'rollup-ws', title: 'Masterclass: The Roll Up (18. Okt 2026)', pillar: 'Fortbildung', badge: 'Didaktik & Cues', desc: 'Biomechanik & anatomisch korrektes Unterrichten' },
+    { id: 'mentee', title: '1:1 Mentee-Begleitung für Trainer:innen', pillar: 'Fortbildung', badge: 'Mentoring', desc: 'Begleitung während/nach der Trainerausbildung' },
+    { id: 'kleingeraete-ws', title: 'Workshop: Sinnvoller Einsatz von Kleingeräten', pillar: 'Fortbildung', badge: 'Praxis-Event', desc: 'Bänder, Bälle & Rollen gezielt einsetzen' },
+    // Retreats & Reisen
+    { id: 'baltrum-meer', title: '5 Tage PILATES & MEER SEIN (Baltrum, 29.09.–03.10.2026)', pillar: 'Retreats', badge: 'Warteliste', desc: 'Meeresrauschen, autofreie Inselruhe & Strandtraining' },
+    { id: 'fasten', title: '5 Tage PILATES & FASTEN (12.–18.10.2026)', pillar: 'Retreats', badge: 'Warteliste', desc: 'Ganzheitliche Entschlackung & sanfte Faszienpflege' },
+    { id: 'pitztal', title: '5 Tage PILATES & BERGWANDERN (Pitztal, 15.–19.06.2027)', pillar: 'Retreats', badge: 'Max. 8 Plätze', desc: 'Alpen-Panorama, Bergluft & gelenkschonendes Training' },
+    { id: 'baltrum-runner', title: '3 Tage PILATES for RUNNER (Baltrum, 01.–04.05.2027)', pillar: 'Retreats', badge: 'Läufer Retreat', desc: 'Laufökonomie, Fußstatik & Strandregeneration' },
+    { id: 'hunte-bike', title: '3 Tage PILATES & BIKE HUNTE TOUR (16.–18.04.2027)', pillar: 'Retreats', badge: 'Aktiv im Grünen', desc: 'Flussradeln entlang der Hunte & Outdoor-Pilates' },
   ];
 
   // Handle direct jump from external cards

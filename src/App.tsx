@@ -37,19 +37,19 @@ export const App: React.FC = () => {
       />
 
       <main className="flex-1">
-        {/* 6. Säule 1: Reguläre Pilates-Kurse für Jeden (Hatten, Oldenburg, Online) */}
+        {/* 6. Reguläre Pilates-Kurse (Hatten, Oldenburg, Online) */}
         <CourseExplorer
           onOpenBooking={handleDirectBooking}
           onOpenZppModal={() => setIsZppModalOpen(true)}
         />
 
-        {/* 7. Säule 2: 1:1 Personal & Reformer Training (Erstgespräch / Mobiles Training) */}
+        {/* 7. 1:1 Personal & Reformer Training (Erstgespräch / Mobiles Training) */}
         <PersonalTraining onOpenBooking={handleDirectBooking} />
 
-        {/* 8. Säule 3: Workshops & Fortbildungen (Getrennt: Für Teilnehmer vs Für Trainer) */}
+        {/* 8. Workshops & Fortbildungen */}
         <Workshops onOpenBooking={handleDirectBooking} />
 
-        {/* 9. Säule 4: Sehnsuchts-Retreats & Reisen */}
+        {/* 9. Gesundheitsreisen & Retreats */}
         <Retreats onOpenBooking={handleDirectBooking} />
 
         {/* 10. Schickes Flow Anfrage-Formular */}

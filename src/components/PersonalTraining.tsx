@@ -17,7 +17,7 @@ export const PersonalTraining: React.FC<PersonalTrainingProps> = ({ onOpenBookin
         <div className="max-w-3xl mb-14">
           <div className="inline-flex items-center gap-2 bg-pilates-gold/20 text-pilates-gold px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 border border-pilates-gold/30">
             <User className="w-3.5 h-3.5" />
-            <span>Säule 2: Individuelle 1:1 Begleitung</span>
+            <span>1:1 Personal & Reformer Training</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             1:1 Personal Training & Exklusive Sessions

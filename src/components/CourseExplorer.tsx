@@ -19,7 +19,7 @@ export const CourseExplorer: React.FC<CourseExplorerProps> = ({ onOpenBooking, o
           <div>
             <div className="inline-flex items-center gap-2 bg-pilates-sage/20 text-pilates-sage px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3 border border-pilates-sage/30">
               <ShieldCheck className="w-4 h-4" />
-              <span>Säule 1: Pilates-Kurse für Jeden</span>
+              <span>Präventionskurse § 20 SGB V</span>
             </div>
             <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-pilates-dark">
               Reguläre Gruppenkurse
