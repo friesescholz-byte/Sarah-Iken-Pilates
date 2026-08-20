@@ -42,20 +42,10 @@ export const PillarsOverview: React.FC<PillarsOverviewProps> = ({ onSelectPillar
   ];
 
   return (
-    <section className="py-12 bg-pilates-sand border-b border-pilates-sandDark">
+    <section className="py-8 sm:py-10 bg-pilates-sand border-b border-pilates-sandDark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Crisp Header */}
-        <div className="text-center max-w-xl mx-auto mb-8">
-          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-pilates-dark tracking-tight">
-            Die 4 Bereiche bei Sarah Iken
-          </h2>
-          <p className="text-xs sm:text-sm text-pilates-muted mt-1">
-            Wähle dein passendes Format:
-          </p>
-        </div>
-
-        {/* 4 Minimalist High-End Cards */}
+        {/* 4 Clean Minimalist Cards directly */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {pillars.map((p) => (
             <a

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { TopBar } from './components/TopBar';
 import { Header } from './components/Header';
 import { PillarsOverview } from './components/PillarsOverview';
-import { TrustStrip } from './components/TrustStrip';
 import { CourseExplorer } from './components/CourseExplorer';
 import { PersonalTraining } from './components/PersonalTraining';
 import { Workshops } from './components/Workshops';
@@ -44,9 +43,6 @@ export const App: React.FC = () => {
           const el = document.getElementById(pillarId);
           if (el) el.scrollIntoView({ behavior: 'smooth' });
         }} />
-
-        {/* 5. Trust & Akkreditierungs-Leiste */}
-        <TrustStrip />
 
         {/* 6. Säule 1: Reguläre Pilates-Kurse für Jeden (Hatten, Oldenburg, Online) */}
         <CourseExplorer
