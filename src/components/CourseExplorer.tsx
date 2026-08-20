@@ -19,14 +19,11 @@ export const CourseExplorer: React.FC<CourseExplorerProps> = ({ onOpenBooking, o
           <div>
             <div className="inline-flex items-center gap-2 bg-pilates-sage/20 text-pilates-sage px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3 border border-pilates-sage/30">
               <ShieldCheck className="w-4 h-4" />
-              <span>Präventionskurse § 20 SGB V</span>
+              <span>Bis zu 100% Erstattung durch deine gesetzliche Krankenkasse</span>
             </div>
             <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-pilates-dark">
               Reguläre Gruppenkurse
             </h2>
-            <p className="text-xs sm:text-sm text-pilates-goldDark font-semibold mt-1">
-              ZPP-Zertifiziert nach § 20 SGB V – bis zu 100% Erstattung durch deine gesetzliche Krankenkasse
-            </p>
           </div>
 
           <button
