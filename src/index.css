@@ -14,7 +14,8 @@
   --color-pilates-sageLight: #E8EFEA;
   --color-pilates-muted: #66776C;
 
-  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-serif: "Outfit", system-ui, -apple-system, sans-serif;
+  --font-heading: "Outfit", system-ui, -apple-system, sans-serif;
   --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
 
   --shadow-luxury: 0 20px 40px -15px rgba(20, 32, 23, 0.08);

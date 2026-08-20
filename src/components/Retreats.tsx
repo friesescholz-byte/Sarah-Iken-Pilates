@@ -81,14 +81,14 @@ export const Retreats: React.FC<RetreatsProps> = ({ onOpenBooking }) => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 bg-pilates-gold/15 text-pilates-goldDark px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
-            <Compass className="w-3.5 h-3.5" />
-            <span>Mehr LEBEN in dein LEBEN bringen</span>
+          <div className="inline-flex items-center gap-2.5 bg-pilates-gold/15 text-pilates-goldDark px-4 py-2 rounded-full text-sm font-extrabold uppercase tracking-wider mb-4">
+            <Compass className="w-4 h-4" />
+            <span>Gesundheitsreisen & Retreats</span>
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-pilates-dark mb-4">
+          <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-extrabold text-pilates-dark mb-4 tracking-tight">
             Gesundheitsreisen & Retreats
           </h2>
-          <p className="text-pilates-dark/75 text-base sm:text-lg">
+          <p className="text-pilates-dark/80 text-base sm:text-xl">
             Pilates lässt sich wunderbar mit kraftvollen Naturerlebnissen verbinden. 
             Am Meer, in den Bergen oder beim Fasten – finde deinen Raum zur echten Regeneration.
           </p>
@@ -108,46 +108,46 @@ export const Retreats: React.FC<RetreatsProps> = ({ onOpenBooking }) => {
                   alt={j.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-4 left-4 flex flex-col gap-1.5">
-                  <span className="bg-pilates-dark/90 backdrop-blur-md text-pilates-gold border border-pilates-gold/30 text-[10px] uppercase font-extrabold px-3 py-1 rounded-full">
+                <div className="absolute top-4 left-4 flex flex-col gap-2">
+                  <span className="bg-pilates-dark/90 backdrop-blur-md text-pilates-gold border border-pilates-gold/30 text-xs uppercase font-extrabold px-3.5 py-1.5 rounded-full">
                     {j.status}
                   </span>
-                  <span className="bg-white/90 backdrop-blur-md text-pilates-dark text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow-sm w-fit">
+                  <span className="bg-white/95 backdrop-blur-md text-pilates-dark text-xs font-extrabold px-3 py-1 rounded-full shadow-sm w-fit">
                     {j.badge}
                   </span>
                 </div>
               </div>
 
               {/* Body */}
-              <div className="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+              <div className="p-7 sm:p-8 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="font-serif text-2xl font-bold text-pilates-dark mb-3 group-hover:text-pilates-gold transition-colors">
+                  <h3 className="font-serif text-2xl sm:text-3xl font-extrabold text-pilates-dark mb-3 group-hover:text-pilates-gold transition-colors">
                     {j.title}
                   </h3>
                   
-                  <div className="flex flex-col gap-1.5 text-xs text-pilates-muted mb-4 font-medium">
+                  <div className="flex flex-col gap-2 text-sm text-pilates-muted mb-5 font-semibold">
                     <div className="flex items-center gap-2">
-                      <Calendar className="w-3.5 h-3.5 text-pilates-gold" />
+                      <Calendar className="w-4 h-4 text-pilates-gold" />
                       <span>{j.date}</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <MapPin className="w-3.5 h-3.5 text-pilates-gold" />
+                      <MapPin className="w-4 h-4 text-pilates-gold" />
                       <span>{j.location}</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Users className="w-3.5 h-3.5 text-pilates-gold" />
+                      <Users className="w-4 h-4 text-pilates-gold" />
                       <span>{j.spots}</span>
                     </div>
                   </div>
 
-                  <p className="text-xs sm:text-sm text-pilates-dark/80 mb-5 leading-relaxed">
+                  <p className="text-sm sm:text-base text-pilates-dark/85 mb-6 leading-relaxed">
                     {j.desc}
                   </p>
 
-                  <div className="space-y-1.5 mb-6">
+                  <div className="space-y-2 mb-6">
                     {j.features.map((f, fIdx) => (
-                      <div key={fIdx} className="flex items-center gap-2 text-xs text-pilates-dark/90 font-medium">
-                        <div className="w-1.5 h-1.5 rounded-full bg-pilates-gold" />
+                      <div key={fIdx} className="flex items-center gap-2.5 text-sm text-pilates-dark font-medium">
+                        <div className="w-2 h-2 rounded-full bg-pilates-gold" />
                         <span>{f}</span>
                       </div>
                     ))}
@@ -155,20 +155,20 @@ export const Retreats: React.FC<RetreatsProps> = ({ onOpenBooking }) => {
                 </div>
 
                 {/* Card Actions */}
-                <div className="pt-4 border-t border-pilates-sandDark space-y-2">
-                  <div className="flex items-center justify-between text-[11px] text-pilates-muted mb-2">
-                    <span className="flex items-center gap-1.5 font-semibold text-pilates-goldDark">
-                      <FileText className="w-3.5 h-3.5 text-pilates-gold" />
+                <div className="pt-5 border-t border-pilates-sandDark space-y-3">
+                  <div className="flex items-center justify-between text-xs text-pilates-muted mb-2">
+                    <span className="flex items-center gap-1.5 font-bold text-pilates-goldDark">
+                      <FileText className="w-4 h-4 text-pilates-gold" />
                       <span>{j.ausschreibungInfo}</span>
                     </span>
                   </div>
 
                   <button
                     onClick={() => onOpenBooking(`Retreat: ${j.title}`, 'retreat')}
-                    className="w-full py-3.5 rounded-full bg-pilates-dark hover:bg-pilates-darker text-white font-bold text-xs transition-all shadow-luxury hover:shadow-gold-glow flex items-center justify-center gap-2 cursor-pointer"
+                    className="w-full py-4 rounded-full bg-pilates-dark hover:bg-pilates-darker text-white font-extrabold text-sm sm:text-base transition-all shadow-luxury hover:shadow-gold-glow flex items-center justify-center gap-2 cursor-pointer"
                   >
                     <span>Platz reservieren / Info anfordern</span>
-                    <ArrowRight className="w-3.5 h-3.5 text-pilates-gold" />
+                    <ArrowRight className="w-4 h-4 text-pilates-gold" />
                   </button>
                 </div>
 
