@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pilates-dark: #142017;
+  --color-pilates-darker: #0d1710;
+  --color-pilates-card: #1b2c21;
+  --color-pilates-sand: #FAF7F2;
+  --color-pilates-sandLight: #FDFBF7;
+  --color-pilates-sandDark: #EFE8DC;
+  --color-pilates-gold: #C98E56;
+  --color-pilates-goldLight: #DDB082;
+  --color-pilates-goldDark: #A66D37;
+  --color-pilates-sage: #4A6B53;
+  --color-pilates-sageLight: #E8EFEA;
+  --color-pilates-muted: #66776C;
+
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  --shadow-luxury: 0 20px 40px -15px rgba(20, 32, 23, 0.08);
+  --shadow-luxury-hover: 0 30px 60px -15px rgba(20, 32, 23, 0.16);
+  --shadow-gold-glow: 0 10px 30px -5px rgba(201, 142, 86, 0.3);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.glass-nav {
+  background: rgba(250, 247, 242, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-card-dark {
+  background: rgba(20, 32, 23, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.image-glow {
+  box-shadow: 0 25px 50px -12px rgba(20, 32, 23, 0.15);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #C98E56;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A66D37;
+}
